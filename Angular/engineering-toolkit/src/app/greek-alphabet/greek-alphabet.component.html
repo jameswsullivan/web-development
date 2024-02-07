@@ -1,0 +1,28 @@
+<div id="greek-alphabet-wrapper">
+    <h1>Greek Alphabet</h1>
+    <ul id="greek-alphabet">
+        <li class="greek-alphabet-letters-li" *ngFor="let letter of letters">
+            <div class="letterDisplayArea">
+                <span class="uppercaseLetter">
+                    {{ letter.uppercaseLetter }}
+                    <button [cdkCopyToClipboard]="letter.uppercaseLetter">copy</button>
+                </span>
+                
+                <span class="lowercaseLetter">
+                    {{ letter.lowercaseLetter }}
+                    <button [cdkCopyToClipboard]="letter.lowercaseLetter">copy</button>
+                </span>
+                
+                <span class="letterName">
+                    {{ letter.letterNameCap }}
+                    <button [cdkCopyToClipboard]="letter.letterNameCap">copy</button>
+                </span>
+                
+                <span class="letterName">
+                    {{ letter.letterNameLower }}
+                    <button [cdkCopyToClipboard]="letter.letterNameLower">copy</button>
+                </span>
+            </div>
+        </li>
+    </ul>
+</div>

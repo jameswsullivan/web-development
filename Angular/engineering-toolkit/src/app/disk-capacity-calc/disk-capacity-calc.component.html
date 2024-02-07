@@ -1,0 +1,58 @@
+<div class="collectInfo">
+    <h1>Unit Converter</h1>
+    <form>
+        <label for="inputBox">{{ inputUnit }}:&nbsp;</label>
+        <input type="text" id="inputBox" name="inputBox" value="0" [(ngModel)]="inputValue" />
+        <span id="resultText">{{ resultValue }}&nbsp;{{ outputUnit }}</span><br />
+        <label for="conversionSelect">Select Unit:&nbsp;</label>
+        <select id="conversionSelect" name="conversionSelect" [(ngModel)]="conversionSelect" (change)="updateSelectedUnitLabels()">
+            <option value="">select an option</option>
+            <option value="KBtoMB">KB to MB</option>
+            <option value="MBtoKB">MB to KB</option>
+            <option value="MBtoGB">MB to GB</option>
+            <option value="GBtoMB">GB to MB</option>
+            <option value="GBtoTB">GB to TB</option>
+            <option value="TBtoGB">TB to GB</option>
+            <option value="TBtoPB">TB to PB</option>
+            <option value="PBtoTB">PB to TB</option>
+            <option value="GBtoGiB">GB to GiB</option>
+            <option value="GiBtoGB">GiB to GB</option>
+            <option value="TBtoTiB">TB to TiB</option>
+            <option value="TiBtoTB">TiB to TB</option>
+          </select><br />
+        <input type="button" id="convertUnit" name="convertUnit" value="Convert" (click)="convertUnit()" />
+    </form>
+</div>
+
+<div class="collectInfo">
+    <h1>RAID Calculator</h1>
+    <form>
+        <label for="numOfDisks">Numer of Disks:&nbsp;</label>
+        <input type="text" id="numOfDisks" name="numOfDisks" value="0" [(ngModel)]="numOfDisks" /><br />
+        <label for="singleDiskCapacity">Single Disk Capacity: &nbsp;</label>
+        <input type="text" id="singleDiskCapacity" name="singleDiskCapacity" value="0" [(ngModel)]="singleDiskCapacity" />
+        <select id="raidUnitSelect" name="raidUnitSelect" value="GB" [(ngModel)]="raidUnitSelect">
+            <option value="GB">GB</option>
+            <option value="GiB">GiB</option>
+            <option value="TB">TB</option>
+            <option value="TiB">TiB</option>
+            <option value="PB">PB</option>
+        </select><br />
+        <label for="raidLevelSelect">Select RAID Level:&nbsp;</label>
+        <select id="raidLevelSelect" name="raidLevelSelect" value="" [(ngModel)]="raidLevelSelect">
+            <option value="RAID0">Traditional RAID 0</option>
+            <option value="RAID1">Traditional RAID 1</option>
+            <option value="RAID10">Traditional RAID 10</option>
+            <option value="RAID5">Traditional RAID 5</option>
+            <option value="RAID6">Traditional RAID 6</option>
+            <option value="RAIDZStripe">RAID-Z Stripe</option>
+            <option value="RAIDZMirror">RAID-Z Mirror</option>
+            <option value="RAIDZ">RAID-Z</option>
+            <option value="RAIDZ2">RAID-Z2</option>
+            <option value="RAIDZ3">RAID-Z3</option>
+        </select><br />
+        <span id="RAIDCapacityLabel">Effective RAID Capacity:&nbsp;</span>
+        <span id="RAIDCapacityData">{{ raidCapacity }}&nbsp;{{ raidUnitSelect }}</span><br />
+        <input type="button" id="calculateRAID" name="calculateRAID" value="Calculate" (click)="calculateRAID()" />
+    </form>
+</div>

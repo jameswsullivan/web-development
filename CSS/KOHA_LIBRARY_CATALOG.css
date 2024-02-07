@@ -1,0 +1,426 @@
+#opac-main .newsheader,
+#opac-main .newsfooter,
+#opac-main #rssnews-container {
+	display: none;
+}
+
+#opacnav ul {
+	padding-left: 5px;
+}
+
+#opacnavbottom select {
+	width: 100%;
+}
+
+
+/*Alex's Custom CSS - Begin*/
+
+#opac-patron-registration table .status {
+	text-align: center;
+}
+
+#opac-patron-registration table .status .fa {
+	font-size: 20px;
+}
+
+#opac-patron-registration table .status .fa-check-square {
+	color: #238823;
+}
+
+/*
+#opac-patron-registration table .status .fa-times-circle {
+	color: #d2222d;
+}
+*/
+
+#memberentry_captcha {
+	margin-bottom: 30px;
+}
+
+#FeaturedContentInOPACAcct {
+    padding-left: 10px;
+}
+
+.FeaturedContentInOPACAcct {
+    font-weight: 600;
+    color: #727272;
+}
+
+#presearch li a {
+	margin-right: 3px;
+    display: block;
+    color: white;
+}
+
+#presearch li {
+        display: block;
+}
+
+#presearch {
+	background-color: #185B93;
+    color: white;
+    padding-bottom: 1px;
+}
+
+#presearch h3 {
+    background-color: #A3BDD4;
+    color: black;
+    padding: 5px 0px 2px 23px;
+}
+
+#newItemLeftSidebar h3, #socialFeedsLeftSidebar h3 {
+    background-color: #A3BDD4;
+    color: black;
+        padding: 5px 0px 2px 23px;
+}
+
+#socialFeedsLeftSidebar h3 {
+    margin: 0;
+}
+
+#forgotpassword, #registrationinstructions {
+    margin-top: 10px;
+}
+
+#opaccredits {
+    margin: 10px 0px 10px 0px;
+}
+
+#libraryname img {
+    width: 20px;
+    height: 20px;
+}
+
+.ecard-pin-explanation {
+    font-size: 14px;
+    color: #c00;
+}
+
+#OPAC_ContactLibraryToUpdatePersonalInfo{
+    display: inline-block;
+    width: 50%;
+    margin: 1em 0 2em 0;
+    font-weight: bold;
+    font-size: smaller;
+}
+
+/*OPAC UI Customization with Galadriel plugin*/
+#searchsubmit {
+    color: #ffffff;
+    margin-left: 5px;
+    border-radius: 5px;
+    text-shadow: none;
+    height: 40px;
+    width: 100px;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+}
+
+#searchform label {
+    font-weight: 800 !important;
+    padding: 5px 5px 0 0 !important;
+    color: #000000;
+}
+
+.mastheadsearch {
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    background-color: #A3BDD4;
+}
+
+
+#select_library, #masthead_search {
+    font-size: 15px;
+}
+
+#searchform input {
+    min-width: 200px;
+}
+
+#opac-main-search select {
+    max-width: 14em;
+    width: auto;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+}
+
+.btn-primary, .btn-primary:active, .btn-primary:focus, .btn-primary:hover, .btn-primary:visited {
+    background-color: #185b93 !important;
+    background-image: linear-gradient(to bottom, #185b93, #185b93) !important;
+}
+
+/*Mobile CSS - Begin*/
+@media (max-width: 767px) {
+    .dropdown-menu-right {
+        right:auto;
+    }
+
+    .navbar .nav>li>.dropdown-menu.dropdown-menu-right:after {
+        left: 20px;
+        right: unset;
+    }
+    
+    #members {
+        display: block;
+        float: left;
+    }
+    
+    #OPAC_TopBannerAnnouncement {
+        margin-bottom: 1.5em;
+        background-color: #A3BDD4;
+        color: #000000 !important;
+        padding: 2.5em 2em;
+        border-radius: 5px;
+    }
+
+    #OPAC_TopBannerAnnouncement h2 {
+        font-size: 1em;
+        text-align: center !important;
+        color: #000000 !important;
+    }
+
+    #OPAC_TopBannerAnnouncement a {
+        text-decoration: underline;
+        font-weight: bold;
+    }
+
+    #opaccredits {
+        margin-bottom: 3em;
+    }
+
+    #opaccredits a {
+        display: table-cell;
+    }
+
+    #OPAC_TopBannerAnnouncement {
+
+    }
+
+    #OPAC_TopBannerAnnouncement p {
+        text-align: left;
+    }
+
+    #socialFeedsLeftSidebar {
+        display: none;
+    }
+
+}
+/*Mobile CSS - End*/
+
+@media (min-width: 768px) {
+    #OPAC_TopBannerAnnouncement {
+        text-align: center;
+        width: 70%;
+        margin: auto;
+    }
+
+    #OPAC_TopBannerAnnouncement p {
+        text-align: justify;
+    }
+
+    #socialFeedsTwitterToggle {
+        display: block;
+        margin: 0 0 20px 0;
+        padding: 0;
+        height: 40px;
+        box-sizing: border-box;
+        border-bottom: 1px solid #dedede;
+    }
+
+    #socialFeedsTwitterToggleIcon {
+        display: block;
+        float: left;
+        width: 15%;
+        height: 100%;
+    }
+
+    #socialFeedsTwitterToggleIcon img {
+        height: 30px;
+        width: 30px;
+        padding-top: 5px;
+    }
+
+    #socialFeedsTwitterToggleBlurb {
+        box-sizing: border-box;
+        height: 100%;
+        width: 85%;
+        float: right;
+        font-size: 0.8em;
+        padding-top: 10px;
+        text-align: left;
+    }
+
+    #socialFeedsTwitterContent {
+        display: none;
+    }
+}
+
+/*Alex's Custom CSS - End*/
+
+#OpacMainUserBlock nav ul li {
+    background-color: #185B93 !important;
+    padding: 10px;
+    color: #ffffff;
+}
+
+#OpacMainUserBlock nav ul {
+    list-style: none !important;
+}
+
+.coverimages img, .coverimages .no-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100px;
+}
+
+#OpacMainUserBlock nav ul li.active {
+    background-color:#A3BDD4 !important;
+    color:#000000;
+}
+
+
+#OpacMainUserBlock nav ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+#coverflowebook div {
+    display:none;
+}
+
+#coverflowya div {
+    display:none;
+}
+
+
+#coverflowchildren div {
+    display:none;
+}
+
+a.ebook {
+    background: url() no-repeat scroll 5px 5px transparent;
+    border: 1px solid #8BC45C;
+    border-radius: 5px 5px 5px 5px;
+    font-size: 135%;
+    font-weight: bold;
+    line-height: 175%;
+    padding: 4px 4px 4px 25px;
+    text-decoration: none;
+}
+
+.results_summary {
+   color: #003478;
+   font-weight: bold;
+    font-size: 100%;
+}
+.results_summary .label {
+   color: #707070;
+   font-weight: bold;
+}
+
+.results_summary a {
+    font-weight: bold;
+}
+
+/*Float Cover Images to Left side*/
+.coverimages {
+    width: 120px;
+    height: 215px;
+    float: left;
+    margin-left: -25px;
+    margin-top: 5px;
+}
+
+.coverimages img, .coverimages .no-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.item-thumbnail {
+    min-height: 125px;
+    width: 85px;
+}
+
+
+/* Begin of customizing opacnavright for feedback paragraph */
+.feedbackpara {
+    width: 70%;
+}
+/* End of customizing opacnavright for feedback paragraph */
+
+.arrival-alert {
+  display: none;
+}
+
+.no-image {
+	display: none;
+}
+
+img[src="https://www.buttecounty.net/portals/28/KohaOPAC/BCLLogo.png"] {
+	width: 100px;
+}
+
+.mobile-container {
+  margin: auto;
+  background-color: #185B93;
+  color: white;
+  border-radius: 10px;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+}
+
+.topnav #myLinks {
+  display: none;
+}
+
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+  background: #185B93;
+}
+
+.topnav a.icon {
+  background: #185B93;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.topnav a:hover {
+  background-color: #A3BDD4;
+  color: black;
+}
+
+.mobile_active {
+  background-color: #185B93;
+  color: white;
+  height: 53px;
+  border-radius: 4px;
+}
+
+@media screen and (max-width: 868px) {
+  #moresearches {
+  	display: none;
+  }
+  .mobile-container {
+  	display: block !important;
+  }
+  #header_content {
+  	justify-content: center;
+    margin-bottom: 1em;
+  }
+}

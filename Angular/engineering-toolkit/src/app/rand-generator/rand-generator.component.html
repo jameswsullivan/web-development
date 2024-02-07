@@ -1,0 +1,33 @@
+<div id="collectInfo">
+    <h1>Random String Generator</h1>
+    <form>
+        <label for="length">Length (8 - 25):</label>
+        <input type="text" id="length" name="length" value="8" [(ngModel)]="length" /><br />
+        <label for="allowNumbers">Allow Numbers:</label>
+        <input type="checkbox" id="allowNumbers" name="allowNumbers" value="Allow Numbers" [(ngModel)]="allowNumbers" /><br />
+        <label for="allowSpecialChar">Allow Special Characters:</label>
+        <input type="checkbox" id="allowSpecialChar" name="allowSpecialChar" value="Allow Special Characters" [(ngModel)]="allowSpecialChar" /><br />
+        <input type="button" id="generateNew" name="generateNew" value="Generate New String" (click)="generateNew()" />
+        <input type="button" id="convertUpper" name="convertUpper" value="To Uppercase" (click)="convertUpper()" />
+        <input type="button" id="convertLower" name="convertLower" value="To Lowercase" (click)="convertLower()" />
+        <input type="button" id="reset" name="reset" value="Reset" (click)="reset()" />
+    </form>
+</div>
+
+<div id="results">
+    <h1>String Generated</h1>
+    <div id="stringGenerated">
+        <span id="resultLabel">String Generated:&nbsp;</span>
+        <span id="resultData">{{ randString }}</span><br />
+        <button [cdkCopyToClipboard]="randString">Copy to Clipboard</button>
+    </div>
+    <div>
+        <br /><br />
+        <span id="resultInfoLabel">Allow Numbers:&nbsp;</span>
+        <span id="resultInfoData">{{ allowNumbers }}</span><br />
+        <span id="resultInfoLabel">Allow Special Char:&nbsp;</span>
+        <span id="resultInfoData">{{ allowSpecialChar }}</span><br />
+        <!-- <span id="resultInfoLabel">:&nbsp;</span>
+        <span id="resultInfoData">{{  }}</span><br /> -->
+    </div>
+</div>

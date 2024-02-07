@@ -1,0 +1,33 @@
+#greek-alphabet {
+    padding: 0;
+}
+
+.letterDisplayArea {
+    margin-bottom: 1em;
+    background-color: #f2f2f2;
+    width: fit-content;
+    padding: 1em;
+    border: dotted 1px #535c68;
+    font-size: large;
+    font-weight: bold;
+}
+
+.letterDisplayArea span {
+    padding: 0.5em 2em;
+    width: 120px;
+    display: inline-block;
+}
+
+.greek-alphabet-letters-li {
+    list-style: none;
+    margin-bottom: 1em;
+}
+
+.uppercaseLetter {
+}
+
+.lowercaseLetter {
+}
+
+.letterName {
+}

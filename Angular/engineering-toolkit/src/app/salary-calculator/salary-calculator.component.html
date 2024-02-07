@@ -1,0 +1,29 @@
+<div class="collectInfo">
+    <h1>Salary Calculator</h1>
+    <form>
+        <label for="inputLabel">{{ inputLabel }}:&nbsp;</label>
+        <input type="text" id="inputLabel" name="inputLabel" value="0" [(ngModel)]="inputData" />
+        <br />
+        <span id="calcParams">Monthly Rate = Hourly Rate x 40 x 52 / 12</span>
+        <br />
+        <label for="conversionSelect">Conversion:&nbsp;</label>
+        <select id="conversionSelect" name="conversionSelect" [(ngModel)]="conversionSelect" (change)="updateInputLabel()">
+            <option value="">select an option</option>
+            <option value="hourlyToMonthly">Hourly to Monthly</option>
+            <option value="monthlyToHourly">Monthly to Hourly</option>
+          </select><br />
+        <input type="button" id="convertUnit" name="convertUnit" value="Convert" (click)="convertUnit()" />
+    </form>
+</div>
+
+<div id="results">
+    <h1>Salary</h1>
+    <div>
+        <span id="resultInfoLabel">Hourly Income:&nbsp;</span>
+        <span id="resultInfoData">$&nbsp;{{ hourlyData }}</span><br />
+        <span id="resultInfoLabel">Monthly Income:&nbsp;</span>
+        <span id="resultInfoData">$&nbsp;{{ monthlyData }}</span><br />
+        <span id="resultInfoLabel">Yearly Income:&nbsp;</span>
+        <span id="resultInfoData">$&nbsp;{{ yearlyData }}</span><br />
+    </div>
+</div>

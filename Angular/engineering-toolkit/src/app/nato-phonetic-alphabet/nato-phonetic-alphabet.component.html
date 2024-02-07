@@ -1,0 +1,20 @@
+<div id="nato-alphabet-wrapper">
+    <h1>NATO Phonetic Alphabet</h1>
+    <ul id="nato-alphabet">
+        <li class="nato-alphabet-letters-li" *ngFor="let letter of letters">
+            <div class="letterDisplayArea">
+                <span class="character">
+                    {{ letter.character }}
+                </span>
+                
+                <span class="morsecode">
+                    {{ letter.morseCode }}
+                </span>
+                
+                <span class="telephony">
+                    {{ letter.telephony }}
+                </span>
+            </div>
+        </li>
+    </ul>
+</div>
